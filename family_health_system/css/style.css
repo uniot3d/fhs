@@ -1,0 +1,150 @@
+/* 主要样式 */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+}
+
+main {
+    flex: 1;
+}
+
+/* 卡片样式 */
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: all 0.3s;
+    margin-bottom: 1.5rem;
+}
+
+.card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    font-weight: 500;
+}
+
+/* 表格样式 */
+.table-responsive {
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+/* 图表容器 */
+.chart-container {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    min-width: 0;
+}
+
+@media (max-width: 991.98px) {
+    .chart-container {
+        height: 220px;
+    }
+}
+@media (max-width: 576px) {
+    .chart-container {
+        height: 180px;
+        min-width: 320px;
+    }
+}
+
+/* 数据卡片 */
+.data-card {
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.data-card i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.data-card .card-value {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.data-card .card-title {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+.bg-gradient-success {
+    background: linear-gradient(135deg, #28a745, #1e7e34);
+}
+
+.bg-gradient-info {
+    background: linear-gradient(135deg, #17a2b8, #117a8b);
+}
+
+.bg-gradient-warning {
+    background: linear-gradient(135deg, #ffc107, #d39e00);
+}
+
+/* 响应式调整 */
+@media (max-width: 767.98px) {
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+    
+    .data-card .card-value {
+        font-size: 1.5rem;
+    }
+    
+    .data-card i {
+        font-size: 1.5rem;
+    }
+}
+
+/* 登录和注册页面 */
+.auth-form {
+    max-width: 450px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.auth-form .form-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* 健康数据记录表格颜色标记 */
+.health-status-normal {
+    background-color: rgba(40, 167, 69, 0.1);
+}
+
+.health-status-warning {
+    background-color: rgba(255, 193, 7, 0.1);
+}
+
+.health-status-danger {
+    background-color: rgba(220, 53, 69, 0.1);
+}
+
+/* 移动端优化 */
+@media (max-width: 576px) {
+    .btn-responsive {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .hide-on-mobile {
+        display: none;
+    }
+} 
