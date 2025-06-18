@@ -1,4 +1,10 @@
 <?php
+session_start();
+if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
+    echo "<script>alert('你没有权限登录该页面。'); window.location.href='login.php';</script>";
+    exit;
+}
+
 require_once 'includes/functions.php';
 
 // 读取当前配置
