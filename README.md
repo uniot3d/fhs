@@ -1,5 +1,5 @@
 # 家庭人员健康管理系统
-测试网址 http://153.3.126.191:81/family_health_system/dashboard.php
+测试网址 https://www.g5bk.com/family_health_system/index.php
 测试账户 test 
 账户密码 123456
 这是一个基于PHP的家庭健康管理系统，可以帮助用户管理家庭成员的健康记录、病历和用药情况。系统支持移动设备访问，让用户随时随地管理家人的健康数据。
